@@ -191,6 +191,14 @@
     <title>Appearance</title>
 
     <variablelist>
+	  <varlistentry>
+        <term>Theme</term>
+
+        <listitem>
+          <para>You can select a theme for OmegaT's user interface. Theme can also be added as plugins.</para>
+        </listitem>
+      </varlistentry>
+
       <varlistentry>
         <term>Restore Main Window</term>
 
