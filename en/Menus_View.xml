@@ -25,7 +25,7 @@
       Delimitations</term>
       <listitem>
         <para>If checked, separations between paragraphs in the source document
-        are indicated visually. See Preferences – <link
+        are indicated visually. See <link
         linkend="dialogs.preferences.editor.paragraph.delimitation.format"
         endterm="dialogs.preferences.editor.paragraph.delimitation.format.title"/>.</para>
         </listitem>
@@ -58,7 +58,7 @@
     </varlistentry>
 
     <varlistentry id="menus.view.mark.non.breakable.space">
-      <term id="menus.view.mark.non.breakable.space.title">Mark Non-breakable
+      <term id="menus.view.mark.non.breakable.space.title">Mark Non-Breakable
       Spaces</term>
       <listitem>
         <para>If checked, non-breakable spaces will be displayed with a gray
@@ -90,7 +90,7 @@
         placed in <link linkend="project.folder.tm.auto"
         endterm="project.folder.tm.auto.title"/> for example) are marked in
         various colors.</para>
-		<para>That color marking is shown as long as Preferences – 
+		<para>That color marking is shown as long as 
         <link linkend="dialogs.preferences.editor.save.auto-populated.status"
         endterm="dialogs.preferences.editor.save.auto-populated.status.title"/>
         is checked.</para>
@@ -143,6 +143,10 @@
         change made to the current segment. Setting it to <guimenuitem>All
         segments</guimenuitem> shows this information for all segments, while
         <guimenuitem>None</guimenuitem> turns this option off.</para>
+		<para>You can adapt the displayed information to your needs. See <link
+		linkend="dialog.preferences.view.use.custom.templates.for.modification.info"
+		endterm="dialog.preferences.view.use.custom.templates.for.modification.info.title"/>
+		for details.</para>
         </listitem>
     </varlistentry>
 	

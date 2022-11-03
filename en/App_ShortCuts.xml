@@ -97,13 +97,14 @@
         
         <para>Since the first few pages have not changed, the translator is
         greeted with a screenful of already translated segments from the
-        previous job's memory upon opening the project. Rather than tediously
-        scroll down until she finds the first segment to translate, the
-        translator quickly presses
-        <keycombo><keycap>C</keycap><keycap>U</keycap></keycombo> to
-        <link linkend="menus.goto.next.untranslated.segment">jump
-        straight into the action</link> and start translating. (And doing so
-        again each time she reaches a large unchanged section.)</para>
+        previous job's memory upon opening the project.</para>
+
+		<para>Rather than tediously scroll down until she finds the first
+		segment to translate, the translator quickly presses
+		<keycombo><keycap>C</keycap><keycap>U</keycap></keycombo> to <link
+		linkend="menus.goto.next.untranslated.segment">jump straight into the
+		action</link> and start translating. (And doing so again each time she
+		reaches a large unchanged section.)</para>
 
         <para>A few segments later, the translator comes across a term she
         should add to the glossary. Instead of reaching for the mouse, she unlocks the cursor with <link linkend="panes.editor.cursor.lock"><keycap>F2</keycap></link>,
@@ -115,21 +116,28 @@
         switches back to the editor and repeats the process to enter the target
         term.</para>
 
-		<para>The translator has enabled the auto-completer to automatically
-		display history predictions, but also glossary terms, and pre-defined
-		short strings, which can be entered with simple arrow navigation.</para>
+		<para>The translator has enabled the <link
+		linkend="dialog.preferences.auto.completion"
+		endterm="dialog.preferences.auto.completion.title"/> to automatically
+		display not only history predictions, but also glossary terms, and
+		pre-defined short strings, which can be entered with simple arrow
+		navigation.</para>
 		
         <para>The translator then reaches a revised section of the text where
         the <link linkend="panes.fuzzy.matches"
         endterm="panes.fuzzy.matches.title"/> pane shows a number of similar
-        segments from the previous job. After quickly tapping
+        segments from the previous job.</para>
+
+		<para>After quickly tapping
         <keycombo><keycap>C</keycap><keycap>I</keycap></keycombo> to insert the
         match, she makes the necessary changes to match the revised text. This
         continues, with the occasional sequence of
         <keycombo><keycap>C</keycap><keycap>2</keycap></keycombo> (or other
         number) followed by
         <keycombo><keycap>C</keycap><keycap>I</keycap></keycombo> when one of
-        the matches from 2 to 5 is more suitable. By the time she gets near the
+        the matches from 2 to 5 is more suitable.</para>
+
+		<para>By the time she gets near the
         end of the section, she has also used
         <keycombo><keycap>C</keycap><keycap>R</keycap></keycombo> once or twice
         to replace already automatically entered fuzzy matches from the previous
@@ -137,15 +145,17 @@
         section.</para>
 
         <para>Later on, the translator comes up with a better way to phrase a
-        somewhat thorny expression that came up earlier, so she selects it in
-        the source text, presses
+        somewhat thorny expression that had come up earlier, so she
+        selects it in the source text, presses
         <keycombo><keycap>C</keycap><keycap>F</keycap></keycombo> <link
         linkend="windows.text.search">to find</link> it, and then uses
         <keycombo><keycap>C</keycap><keycap>J</keycap></keycombo> to immediately
-        to that segment from the search dialog. Since she had noted the number of the segment she was in, she uses
-        <keycombo><keycap>C</keycap><keycap>J</keycap></keycombo> again in the
-        editor, enters the number in the dialog, and immediately continues from
-        where she left off.</para>
+        jump to that segment from the search dialog.</para>
+
+		<para>Since OmegaT has registered her navigation history, she only needs
+		to use
+		<keycombo><keycap>C</keycap><keycap>S</keycap><keycap>J</keycap></keycombo>
+		to immediately continue from where she left off.</para>
 
         <para>Time for a break. As she savors her coffee, the translator
         reflects on how much more smoothly she was able to use the various
@@ -214,11 +224,11 @@
             <itemizedlist>
               <listitem>
                 <para><ulink
-                url="https://sourceforge.net/p/omegat/svn/HEAD/tree/trunk/src/org/omegat/gui/main/MainMenuShortcuts.properties">MainMenuShortcuts.properties</ulink></para>
+                url="https://github.com/omegat-org/omegat/tree/master/src/org/omegat/gui/main/MainMenuShortcuts.properties">MainMenuShortcuts.properties</ulink></para>
               </listitem>
               <listitem>
                 <para><ulink
-                url="https://sourceforge.net/p/omegat/svn/HEAD/tree/trunk/src/org/omegat/gui/main/EditorShortcuts.properties">EditorShortcuts.properties</ulink></para>
+                url="https://github.com/omegat-org/omegat/tree/master/src/org/omegat/gui/main/EditorShortcuts.properties">EditorShortcuts.properties</ulink></para>
               </listitem>
             </itemizedlist>
           </listitem>
@@ -228,11 +238,11 @@
             <itemizedlist>
               <listitem>
                 <para><ulink
-                url="https://sourceforge.net/p/omegat/svn/HEAD/tree/trunk/src/org/omegat/gui/main/MainMenuShortcuts.mac.properties">MainMenuShortcuts.mac.properties</ulink></para>
+                url="https://github.com/omegat-org/omegat/tree/master/src/org/omegat/gui/main/MainMenuShortcuts.mac.properties">MainMenuShortcuts.mac.properties</ulink></para>
               </listitem>
               <listitem>
                 <para><ulink
-                url="https://sourceforge.net/p/omegat/svn/HEAD/tree/trunk/src/org/omegat/gui/main/EditorShortcuts.mac.properties">EditorShortcuts.mac.properties</ulink></para>
+                url="https://github.com/omegat-org/omegat/tree/master/src/org/omegat/gui/main/EditorShortcuts.mac.properties">EditorShortcuts.mac.properties</ulink></para>
               </listitem>
             </itemizedlist>
           </listitem>
@@ -280,7 +290,7 @@
       <listitem>
         <para><code>modifier</code> can be:
         <literal>shift</literal>, <literal>ctrl</literal>,
-        <literal>meta</literal>, <literal>alt</literal>,
+        <literal>meta</literal>, <literal>alt</literal>, or
         <literal>altGraph</literal></para>
 
         <note>
@@ -442,36 +452,36 @@
 
           <tbody>
             <row>
-              <entry>New</entry>
+              <entry>New...</entry>
               <entry>projectNewMenuItem</entry>
               <entry>ctrl shift N</entry>
               <entry>meta shift N</entry>
             </row>
 
             <row>
-              <entry>Download Team Project</entry>
+              <entry>Download Team Project...</entry>
               <entry>projectTeamNewMenuItem</entry>
             </row>
 
             <row>
-              <entry>Open</entry>
+              <entry>Open...</entry>
               <entry>projectOpenMenuItem</entry>
               <entry>ctrl O</entry>
               <entry>meta O</entry>
             </row>
 
             <row>
-              <entry>Open Recent Project</entry>
+              <entry>Open Recent...</entry>
               <entry>projectOpenRecentMenuItem</entry>
             </row>
 
             <row>
-              <entry>Copy Files to Source Folder...</entry>
+              <entry>Add Files...</entry>
               <entry>projectImportMenuItem</entry>
             </row>
 
             <row>
-              <entry>Download MediaWiki Page...</entry>
+              <entry>Add MediaWiki Page...</entry>
               <entry>projectWikiImportMenuItem</entry>
             </row>
 
@@ -506,14 +516,14 @@
             </row>
 
             <row>
-              <entry>Create Translated Documents</entry>
+              <entry>Create Translated Files</entry>
               <entry>projectCompileMenuItem</entry>
               <entry>ctrl D</entry>
               <entry>meta D</entry>
             </row>
 
             <row>
-              <entry>Create Current Translated Documents</entry>
+              <entry>Create Current Translated File</entry>
               <entry>projectSingleCompileMenuItem</entry>
               <entry>ctrl shift D</entry>
               <entry>meta shift D</entry>
@@ -527,14 +537,14 @@
             </row>
 
             <row>
-              <entry>Project Files...</entry>
+              <entry>Source Files...</entry>
               <entry>viewFileListMenuItem</entry>
               <entry>ctrl L</entry>
               <entry>meta L</entry>
             </row>
 
             <row>
-              <entry>Access Project Contents/Root</entry>
+              <entry>Access Project Contents/Project Folder</entry>
               <entry>projectAccessRootMenuItem</entry>
             </row>
 
@@ -557,6 +567,16 @@
               <entry>Access Project Contents/Target Files</entry>
               <entry>projectAccessTargetMenuItem</entry>
             </row>
+            
+            <row>
+              <entry>Access Project Contents/TMs</entry>
+              <entry>projectAccessTMMenuItem</entry>
+            </row>
+
+            <row>
+              <entry>Access Project Contents/Exported TMs</entry>
+              <entry>projectAccessExportTMMenuItem</entry>
+            </row>
 
             <row>
               <entry>Access Project Contents/Current Source Document</entry>
@@ -569,7 +589,7 @@
             </row>
 
             <row>
-              <entry>Access Project Contents/Writeable Glossary</entry>
+              <entry>Access Project Contents/Writable Glossary</entry>
               <entry>projectAccessWriteableGlossaryMenuItem</entry>
             </row>
 
@@ -924,14 +944,14 @@
             </row>
 
             <row>
-              <entry>Forward in history...</entry>
+              <entry>Forward in History</entry>
               <entry>gotoHistoryForwardMenuItem</entry>
               <entry>ctrl shift N</entry>
               <entry>meta shift N</entry>
             </row>
 
             <row>
-              <entry>Back in history...</entry>
+              <entry>Back in History</entry>
               <entry>gotoHistoryBackMenuItem</entry>
               <entry>ctrl shift P</entry>
               <entry>meta shift P</entry>
@@ -990,7 +1010,7 @@
             </row>
 
             <row>
-              <entry>Mark Non-breakable Spaces</entry>
+              <entry>Mark Non-Breakable Spaces</entry>
               <entry>viewMarkNBSPCheckBoxMenuItem</entry>
             </row>
 
