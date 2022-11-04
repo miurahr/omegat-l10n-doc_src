@@ -52,11 +52,10 @@
   <section id="installing.omegat.linux.intel">
     <title id="installing.omegat.linux.intel.title">On Linux</title>
 
-	<para>Linux distributions offer OmegaT packages with semi-automated
-	installation processes. The instructions given here apply to people who
-	download the package from the <ulink
-	url="https://omegat.org/download">https://omegat.org</ulink>
-	site.</para>
+	<para>Some Linux distributions offer OmegaT in their package manager. The
+	instructions given here apply to people who download the package from the
+	<ulink url="https://omegat.org/download">https://omegat.org</ulink>
+	site and install it manually.</para>
 
 
     <para>Unpack/untar the file you downloaded. This creates a new
@@ -115,7 +114,7 @@
     url="https://adoptium.net/temurin"/>.</para>
 
     <para>IBM provides JREs for Linux PowerPC at <ulink
-    url="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?license=IBM"/>.</para>
+    url="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/"/>.</para>
 
     <para>Follow the installation instructions of the package you
     need.</para></note>
@@ -130,14 +129,14 @@
   <section id="update.and.delete.omegat">
 	<title id="update.and.delete.omegat.title">Upgrade</title>
 
-	<para>OmegaT can tell you when a new version is available. See Preferences – <link
+	<para>OmegaT can tell you when a new version is available. See <link
 	endterm="dialogs.preferences.updates.title"
 	linkend="dialogs.preferences.updates"/>
 	for details.</para>
 
 	<para>The changes between your version and the current version are
 	documented in the development site’s <ulink
-	url="https://sourceforge.net/p/omegat/code/ci/master/tree/release/changes.txt">change.txt</ulink>
+	url="https://sourceforge.net/p/omegat/code/ci/master/tree/release/changes.txt">changes.txt</ulink>
 	file.</para>
 
 	<note>
@@ -163,15 +162,13 @@
 		<listitem>
 		  <para>Parameter files that are included in the downloaded OmegaT
 		  package (especially the <filename>OmegaT.l4J.ini</filename> for
-		  <link endterm="running.omegat.on.windows.title"
-				linkend="running.omegat.on.windows"/> and the
+		  <link linkend="running.omegat.on.windows">Windows</link> and the
 		  <filename>Configuration.properties</filename> and
 		  <filename>Info.plist</filename> files for <link
-		  endterm="running.omegat.on.macos.title"
-		  linkend="running.omegat.on.macos"/> packages) might be overwritten
-		  or deleted, so you may want to create a backup before upgrading, if
-		  you have been using these files to modify OmegaT’s launch
-		  parameters.</para>
+		  linkend="running.omegat.on.macos">macOS</link> packages) might be
+			overwritten or deleted, so you may want to create a backup before
+			upgrading, if you have been using these files to modify OmegaT’s
+			launch parameters.</para>
 		</listitem>
 
 		<listitem>
@@ -231,12 +228,12 @@
   <section id="build.omegat.from.source">
 	<title id="build.omegat.from.source.title">Build OmegaT</title>
 
-	<para>The sources of the current version can be retrieved with a Git client
-	from the <ulink url="https://git.code.sf.net/p/omegat/code"/> repository or
-	directly from <ulink
-	url="https://sourceforge.net/p/omegat/code/ci/master/tarball?path=">SourceForge</ulink>.</para>
+	<para>The source code for the current version can be either be downloaded directly from the OmegaT <ulink
+	url="https://omegat.org/download">download page.</ulink>, or cloned from the
+	<ulink url="https://git.code.sf.net/p/omegat/code">Sourceforge</ulink> or <ulink url="https://github.com/omegat-org/omegat.git">GitHub</ulink> repositories.</para>
 	<para>Once the code is downloaded, open a terminal in the source folder
-	(<filename>/omegat/src</filename>) and type:</para>
+	(<filename>omegat-code/</filename> if you cloned from Sourceforge, or
+	<filename>/omegat</filename> if you cloned from GitHub) and type:</para>
 
 	<programlisting>./gradlew installDist</programlisting>
 
@@ -252,8 +249,8 @@
 
 	<programlisting>./gradlew tasks</programlisting>
 
-	<para>Detailed instructions on building OmegaT are in the docs_devel <ulink
+	<para>Detailed instructions on building OmegaT can be found in the  <ulink
 	url="https://sourceforge.net/p/omegat/svn/HEAD/tree/trunk/docs_devel/README.txt">README.txt</ulink>
-	file.</para>
+	file located in the <filename class="directory">docs_devel</filename> subfolder.</para>
   </section>
 </section>

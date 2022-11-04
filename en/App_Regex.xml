@@ -99,8 +99,8 @@
         <para>Segmentation rules and language patterns are defined with
         regular expressions. You can modify them freely to improve the
         segmentation of a document or add additional general rules. See
-        <link linkend="dialogs.preferences.segmentation.setup"
-			  endterm="dialogs.preferences.segmentation.setup.title"/> for
+        <link linkend="app.segmentation"
+			  endterm="app.segmentation.title"/> for
         details.</para>
         <para>Segmentation or exception rules define the position in a
         segment where a split will, or will not, be made. Two regular
@@ -152,7 +152,7 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Letters of the alphabet preceded by a blackslash
+        <term>Letters of the alphabet preceded by a backslash
         (<literal>\</literal>) take on a special meaning</term>
         <listitem>
           <para>Unlike a letter on its own, which simply represents itself
@@ -250,7 +250,7 @@
                 <tbody>
                   <row>
                     <entry></entry>
-                    <entry><literal>0\.\d</literal></entry>
+                    <entry><literal>0\.[0-9]</literal></entry>
                   </row>
 
                   <row>
@@ -258,8 +258,8 @@
                     <entry>
                       <para>A number between <emphasis>0.0</emphasis> and
                       <emphasis/>0.9, or just the final
-                      <emphasis>1.5</emphasis> in numbers such as 11.5 or
-                      561.5.</para>
+                      <emphasis>0.5</emphasis> in numbers such as 10.5 or
+                      560.5.</para>
                       <para>The <literal>\.</literal> cancels the “any
                       character” meaning of the period to match the decimal
                       point, while the <literal>\d</literal> turns the
@@ -271,9 +271,9 @@
                   <row>
                     <entry>Does not match</entry>
                     <entry>
-                      <para>Sequences such as 0,1 or 0-3, in
-                      which a period not preceded by a backslash
-                      would match any character between two digits.</para>
+                      <para>Sequences such as 0,1, 0-3, or the first three
+                      characters of 0x002E, which would be matched if the expression was just <literal>0.[0-9]</literal>, with no
+                      backslash before the period</para>
                     </entry>
                   </row>
                 </tbody>
@@ -414,13 +414,13 @@
                   <row>
                     <entry>Matches</entry>
                     <entry>
-                      <para>Any combinations of four letters
+                      <para>Any combinations of three letters
                         starting with “c” and ending with “t”:
-                        “<emphasis>cart</emphasis>”,
-                        “<emphasis>cult</emphasis>”,
-                        “<emphasis>coat</emphasis>”, or even nonsensical
-                        combinations such as “<emphasis>cbzt</emphasis>”
-                        or “<emphasis>cqlt</emphasis>”.
+                        “<emphasis>cat</emphasis>”,
+                        “<emphasis>cut</emphasis>”,
+                        “<emphasis>cot</emphasis>”, or even nonsensical
+                        combinations such as “<emphasis>czt</emphasis>”
+                        or “<emphasis>cqt</emphasis>”.
                       </para>
                     </entry>
                   </row>
@@ -428,14 +428,13 @@
                   <row>
                     <entry>Does not match</entry>
                     <entry>
-                      <para>Combinations containing four letters that start
-                      with “c” and ending with “t” split, but are split across
-                      more than one line.</para>
+                      <para>Combinations containing three letters that
+                      start with “c” and ending with “t” split, but are
+                      split across more than one line.</para>
                       <para>What is the missing letter?</para>
                         <simplelist>
                           <member><literal>c</literal></member>
                           <member><literal></literal></member>
-                          <member><literal>a</literal></member>
                           <member><literal>t</literal></member>
                         </simplelist>
                     </entry>
@@ -857,8 +856,8 @@
     from the simple to the complex.</para>
       
     <note>
-      <para>Remember that all alphabetic characters preceded by a
-      <literal>\</literal> turn into an expression that represents
+      <para>Remember that most <emphasis>alphabetic</emphasis> characters
+      preceded by a <literal>\</literal> turn into an expression that represents
       <emphasis>not the character itself, but its associated special
       meaning</emphasis>.</para>
     </note>
@@ -962,8 +961,8 @@
       <para>Classes are defined by enclosing the desired characters in square
       brackets, and can be specified either by listing each individual character
       to include, or by specifying a range of characters. For example, you could
-      create the <literal>[£€$]</literal> to find any of those three currency
-      symbols in the text, or [1-3] to find the number 1, 2 or 3.
+      create the <literal>[£€$]</literal> class to find any of those three
+      currency symbols in the text, or [1-3] to find the number 1, 2 or 3.
         <note>
           <para>Inside a class, only the backslash (<literal>\</literal>), 
           caret (<literal>^</literal>), closing bracket (<literal>]</literal>)
@@ -1279,7 +1278,7 @@
             <entry><literal>,\h[\h(\w+\.\w+)\w,'ʼ"“”-]+[\.,]</literal></entry>
             <entry>
               <para>Find clauses that start with a comma followed by a
-              whitesspace character, contain one or more words (including words
+              whitespace character, contain one or more words (including words
               in quotation marks, contractions, and filenames with a file
               extension), and end either with a comma or period.</para>
             </entry>
@@ -1323,7 +1322,7 @@
                     <para>1969.7.20</para>
                   </listitem>
                   <listitem>
-                    <para>2022.10.31</para>
+                    <para>2022-10-31</para>
                   </listitem>
                 </itemizedlist>
               </para>

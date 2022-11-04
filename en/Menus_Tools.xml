@@ -27,8 +27,7 @@
         <itemizedlist>
           <listitem>
             <para><guilabel>Tag Issues</guilabel> (always selected): detects
-            missing or displaced tags, including custom tags and controlled
-            strings. See Preferences – <link linkend="dialogs.preferences.tag.processing"
+            missing or displaced tags, including custom tags and flagged text. See <link linkend="dialogs.preferences.tag.processing"
             endterm="dialogs.preferences.tag.processing.title"/> for details.
             The option is always selected.</para>
           </listitem>
@@ -41,7 +40,7 @@
           </listitem>
           <listitem>
             <para><guilabel>Terminology Issues</guilabel> (optional): detects
-            all the glossary items that are not properly translated. See Preferences – <link
+            all the glossary items that are not properly translated. See <link
             linkend="dialogs.preferences.glossary"
             endterm="dialogs.preferences.glossary.title"/> for details.</para>
           </listitem>
@@ -66,6 +65,14 @@
             <para>selecting a row, or moving the mouse over it, displays a
             context menu icon in the last column; clicking that icon presents
             actions available to correct or ignore the error.</para>
+			<note><para>You can force issue checking each time you leave a
+			segment (see <link
+			linkend="dialogs.preferences.editor.validate.tags.when.leaving.a.segment"
+			endterm="dialogs.preferences.editor.validate.tags.when.leaving.a.segment.title"/>)
+			and block translated files creation if tag issues are found (see
+			<link
+			linkend="dialogs.preferences.tag.processing.do.not.allow.creating.translated.documents.with.tag.issues"
+			endterm="dialogs.preferences.tag.processing.do.not.allow.creating.translated.documents.with.tag.issues.title"/>).</para></note>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -73,7 +80,7 @@
 
     <varlistentry id="menus.tools.check.issues.for.current.document">
       <term id="menus.tools.check.issues.for.current.document.title">Check
-      Issues for Current Document</term>
+      Issues for Current File</term>
       <listitem>
         <para>As above, but only for the document currently displayed in the
         Editor pane.</para>
@@ -89,6 +96,22 @@
 		<para>The data is also saved as a text file in <link
 		linkend="project.folder.omegat.folder"
 		endterm="project.folder.omegat.folder.title"/>.</para>
+		<note><para>Word count, segment total and other items can be influenced by the following factors:
+		<itemizedlist>
+		  <listitem>
+			<para>File filter settings: some filters allow for extra parts to be considered for translation. See <link linkend="filters.options" endterm="filters.options.title"/> for details.</para>
+		  </listitem>
+		  <listitem>
+			<para>Segmentation rules: different rules will generate a different number of segment. See <link linkend="app.segmentation" endterm="app.segmentation.title"/> for details.</para>
+		  </listitem>
+		  <listitem>
+			<para>Tags: OmegaT tags are never counted in the statistics but in some cases can split terms and create discrepencies in the way OmegaT counts them. See <link linkend="dialogs.project.properties.remove.tags" endterm="dialogs.project.properties.remove.tags.title"/> for details.</para>
+		  </listitem>
+		  <listitem>
+			<para>Custom tags and flagged text: as for OmegaT tags, they are not counted by default in the statistics, but you can have OmegaT count them as words. See <link linkend="dialogs.preferences.tag.processing.count.protected.text.and.custom.tags.in.statistics" endterm="dialogs.preferences.tag.processing.count.protected.text.and.custom.tags.in.statistics.title"/> for details.</para>
+		  </listitem>
+		</itemizedlist>
+		</para></note>
       </listitem>
     </varlistentry>
 
@@ -122,9 +145,9 @@
         <para>Select the two files to align (the source file and its
         translation) and click <guibutton>OK</guibutton> to open the <link
         linkend="windows.aligner" endterm="windows.aligner.title"/> window.</para>
-        <para>The supported file formats are the same as those listed in Preferences – <link
-        linkend="dialogs.preferences.file.filters"
-        endterm="dialogs.preferences.file.filters.title"/>.</para>
+        <para>The supported file formats depend on your project setting. See <link
+        linkend="file.filters"
+        endterm="file.filters.title"/> for details.</para>
         <para>The source and target files can have different formats (for
         example, a <filename>.docx</filename> file can be aligned with a
         <filename>.pdf</filename> file).</para>
@@ -163,10 +186,9 @@
       <term id="menus.tools.external.search.commands.title">External search
       commands</term>
       <listitem>
-        <para>If commands to perform external searches have been defined in
-        Preferences – <link linkend="dialogs.preferences.external.searches"
-        endterm="dialogs.preferences.external.searches.title"/>, they are listed
-        and accessible here.</para>
+        <para>If you have defined external searches in
+        <link linkend="dialogs.preferences.external.searches"
+        endterm="dialogs.preferences.external.searches.title"/>, their names are listed and accessible here.</para>
       </listitem>
     </varlistentry>
   </variablelist>

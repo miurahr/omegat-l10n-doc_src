@@ -15,7 +15,7 @@
   
 	<section>
 	  <title>Association</title>
-		<para>File filters have a list of file extensions that are associated to them. If the format you want to translate is structurally close to an already supported format, just add its file extension to the supported format extension list, or change the file extension to one that is accepted by the file filter that you want to use. See <link linkend="dialogs.preferences.file.filters" endterm="dialogs.preferences.file.filters.title"/> for details.</para>
+		<para>File filters have a list of file extensions that are associated to them. If the format you want to translate is structurally close to an already supported format, just add its file extension to the supported format extension list, or change the file extension to one that is accepted by the file filter that you want to use. See <link linkend="file.filters" endterm="file.filters.title"/> for details.</para>
 		<para>You can also use OmegaT's custom tag function to register format specific strings and have OmegaT handle them as if they were normal tags. See <link linkend="dialogs.preferences.tag.processing.regular.expressions.for.custom.tags" endterm="dialogs.preferences.tag.processing.regular.expressions.for.custom.tags.title"/> for details.</para>
 	</section>
 	
@@ -66,6 +66,6 @@
 
 	<section>
 	  <title>Development</title>
-	  <para>OmegaT provides developpers with a thorough documentation to create file filter plugins. See <ulink url="https://sourceforge.net/p/omegat/code/ci/master/tree/docs_devel/HowToCreateFilterPlugin.md">How to create a file filter plugin for OmegaT</ulink> for details.</para>
+	  <para>OmegaT provides developpers with thorough documentation to create file filter plugins. See <ulink url="https://sourceforge.net/p/omegat/code/ci/master/tree/docs_devel/HowToCreateFilterPlugin.md">How to create a file filter plugin for OmegaT</ulink> for details.</para>
 	</section>
   </section>
