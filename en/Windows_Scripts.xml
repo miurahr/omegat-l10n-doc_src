@@ -18,34 +18,32 @@
   access the window.</para>
 
   <section id="windows.scripts.folder">
-	<title id="windows.scripts.folder.title">The script folder</title>
-	
-	<para>By default, scripts are stored in the <link
-	linkend="application.folder.scripts"
-	endterm="application.folder.scripts.title"/> folder of the OmegaT
-	application folder.</para>
+  <title id="windows.scripts.folder.title">The script folder</title>
 
-	<para>New scripts added there will appear in the list of available scripts
-	in the left-hand panel of the window.</para>
-
-	<warning>
-	  <para>If no list of scripts is displayed on the left side of 
-	  the script editor window, use the Scripting window <guimenu>File</guimenu> >
-	  <guimenuitem>Set Scripts Folder...</guimenuitem> menu to set 
-	  the location of the scripts.</para>
-	</warning>
-
-	<para>Additional scripts can be found here: <ulink
-	url="https://sourceforge.net/projects/omegatscripts/">OmegaT
-	Scripts</ulink>. Just copy the file to the <link
-	linkend="application.folder.scripts"
-	endterm="application.folder.scripts.title"/> folder.</para>
-
-  <para>Some scripts are <emphasis>event</emphasis>-based and can be set to
-  trigger automatically when a given event takes place. Each event corresponds
-  to a subfolder under <link
+  <para>By default, scripts are stored in the <link
   linkend="application.folder.scripts"
-  endterm="application.folder.scripts.title"/>:</para>
+  endterm="application.folder.scripts.title"/> folder of the OmegaT
+  application folder.</para>
+
+  <para>New scripts added there will appear in the list of available scripts
+  in the left-hand panel of the window.</para>
+
+  <warning>
+    <para>If no list of scripts is displayed on the left side of 
+    the script editor window, use the Scripting window <guimenu>File</guimenu> >
+    <guimenuitem>Set Scripts Folder...</guimenuitem> menu to set 
+    the location of the scripts.</para>
+  </warning>
+
+  <para>Additional scripts can be found here: <ulink
+  url="https://sourceforge.net/projects/omegatscripts/">OmegaT
+  Scripts</ulink>. Just copy the file to the <link
+  linkend="application.folder.scripts"
+  endterm="application.folder.scripts.title"/> folder.</para>
+
+  <para>Some scripts are <emphasis>event</emphasis>-based. The folder containing
+  the scripts includes subfolders corresponding to the available events. You can
+  trigger scripts automatically by placing them in the appropriate subfolder:</para>
 
   <variablelist>
 	<varlistentry id="application.folder.scripts.application.shutdown">
@@ -74,7 +72,7 @@
 	</varlistentry>
   </variablelist>
 
-  <para>The folders are already created in the script folder that comes with the
+  <para>These subfolders are already created in the script folder that comes with the
   distribution.</para>
   
   <warning>
@@ -90,7 +88,7 @@
 	<title id="windows.scripts.usage.title">Usage</title>
 
 	<itemizedlist>
-      <listitem>
+    <listitem>
 		<para>Click the name of a script in the list in the left-hand panel. The
 		script is loaded in the editor.</para>
       </listitem>
@@ -430,10 +428,20 @@
     </variablelist>
   </section>
 
-  <section id="windows.scripts.languages">
-    <title id="windows.scripts.languages.title">Languages</title>
+  <section id="windows.scripts.references">
+    <title id="windows.scripts.references.title">References</title>
 
     <variablelist>
+      <varlistentry>
+        <term>OmegaT Javadoc</term>
+
+        <listitem>
+          <para>The <ulink
+          url="https://omegat.sourceforge.io/javadoc-latest/">OmegaT API</ulink>
+          documentation.</para>
+        </listitem>
+      </varlistentry>
+
       <varlistentry>
         <term>Groovy</term>
 
@@ -441,7 +449,7 @@
           <para>A dynamic language for the Java Virtual machine. It builds upon
           the strengths of Java, and adds powerful features inspired by
           languages like Python, Ruby and Smalltalk. See <ulink
-          url="https://groovy-lang.org">Apache Groovy</ulink> for
+          url="https://groovy-lang.org/documentation.html">Apache Groovy</ulink> for
           details.</para>
         </listitem>
       </varlistentry>
@@ -456,7 +464,9 @@
           programming styles. See <ulink
           url="https://developer.oracle.com/databases/nashorn-javascript-part1.html">Practical
           Nashorn, Part 1: Introducing JavaScript, ECMAScript, and
-          Nashorn</ulink>.</para>
+          Nashorn</ulink> and <ulink
+          url="https://www.ecma-international.org/ecma-262/5.1/">ECMAScript® 5.1
+          Language Specification</ulink>.</para>
         </listitem>
       </varlistentry>
     </variablelist>
